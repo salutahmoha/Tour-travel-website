@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --text-color:#fff;
+    --main-color: #000000;
+    --other-color: #ebe2e2;
+    --small-color: #ff9f0d;
+    
+}
+body{
+    background-color: #000000;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 80px;
+}
+.navbar-nav{
+    margin-right: 180px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #ff9f0d;
+    transition: all .5s ease;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #ff9f0d;
+    font-weight: 600;
+}
+.icons{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 2rem;
+}
+.icons li{
+    list-style: none;
+    margin-left: 10px;
+    color: #000000;
+}
+.icons a{
+   display: inline-flex;
+   text-decoration: none;
+   align-items: center;
+   color: #000000;
+   margin-left: 5px;
+}
+.icons a:hover{
+    color: #ff9f0d;
+    transition: all .5s ease;
+}
+.home{
+    padding-top: 170px;
+    background-image: url(images/background.jpg);
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+.row h3{
+    color: #ff9f0d;
+}
+.row h1{
+    color: #fff;
+}
+.row h4{
+    color: #fff;
+    font-weight: 500;
+}
+.row h5{
+    color: #807c74;
+}
+.row p{
+    color: #ebe2e2;
+    font-weight: 300;
+    font-size: 18px;
+}
+.row .btn{
+    background-color: #d18717;
+    width: 120px;
+    color: #000000;
+    font-weight: 400;
+}
+.row .btn:hover{
+    background-color: #fff;
+    color: #000000;
+    transform: translateX(4px);
+    transition: all .5s ease;
+}
+.tours{
+    padding-top: 100px;
+}
+.image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.image img:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+.row .p1{
+    color: #000000;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.information{
+    margin-top: 50px;
+    padding: 40px 0px;
+    background: #000000;
+}
+.information h3{
+    padding-top: 45px;
+}
+.about{
+    margin-top: 30px;
+    text-align: center;
+}
+.about h1{
+    color: #000000;
+    margin-bottom: 20px;
+}
+.about img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.about img:hover{
+    transform: scale(1.1);
+    transition: all .8s ease;
+}
+.about .btn{
+    margin-top: 20px;
+}
+.culture{
+    margin-top: 30px;
+    background: #000000;
+    padding: 20px 0px;
+}
+.contact{
+    background: #000000;
+    padding-top: 90px;
+}
+textarea{
+    margin-top: 80px;
+    text-align: center;
+    color: #807c74;
+}
+.part2{
+    padding-top: 60px;
+}
+.part2 h5:hover{
+    transform: translateX(4px);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    gap: 2rem;
+    
+}
+.social .s1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:  #807c74;
+}
+.social .s1:hover{
+    color: #d18717;
+    transform: scale(1.5);
+    transform: translateX(-3px);
+    transition: all .5s ease;
+}
+.copyright{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 500;
+}
+/*media query */
+@media (max-width: 991px) {
+    .icons {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        margin-left: auto;
+        order: 3;
+        right: 0;
+    }
+    .navbar-toggler {
+        order: 1;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        order: 2;
+        right: 0;
+      }
+      .icons.h-right.d-flex {
+        margin-top: 10px;
+      }
+      .icons.h-right.d-flex a{
+        margin-right: 60px;
+      }
+      .row.d-flex.justify-content-around.align-content-center .col-12.col-lg-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .row.d-flex.justify-content-around.align-content-center .col-12.col-lg-2 .image {
+        margin-bottom: 10px; /* Adjust the margin value as needed */
+      }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row.justify-content-center {
+        justify-content: space-between;
+      }
+      
+      .col-12.col-lg-4 {
+        margin-bottom: 20px; /* Adjust the margin value as needed */
+      }
+      .col-12.col-lg-4 img{
+        margin-left: 140px;
+      }
+      .col-12.col-lg-6 img {
+        margin-top: 20px; 
+      }
+      .navbar-collapse {
+        transition: max-height 0.3s ease-in-out;
+      }
+  }
